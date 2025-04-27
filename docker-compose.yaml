@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  python:
+    image: kiran1407/pythonlife:v2
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+  movies:
+    image: kiran1407/pymymovies:v2
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
+  dth:
+    image: kiran1407/pymydth:v2
+    ports:
+      - "84:80"
+    deploy:
+      replicas: 3
